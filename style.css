@@ -16,6 +16,7 @@ img{
 
 .container{
   width: 95%;
+  max-width: 70em;
   margin: 0 auto;
 }
 
@@ -36,6 +37,7 @@ h1{
 
 logo{
   position: absolute;
+  height: 25vh;
   left: 0;
   right: 0;
   margin: 1em;
@@ -79,7 +81,15 @@ nav a:focus {
   color: #DDD;
 }
 
-.about-sewitwas container float-img{
+
+
+
+.about-sewitwas{
+  background-color: black;
+  height: 80vh;
+}
+
+.float-img{
   float: right;
   border-radius: 50%;
   width: 225px;
@@ -89,10 +99,6 @@ nav a:focus {
   margin-bottom: 15px;
 }
 
-
-.about-sewitwas{
-  background-color: black;
-}
 .about-sewitwas h1{
   color: white;
 }
@@ -107,8 +113,9 @@ nav a:focus {
 
 }
 .logo{
-  height: 100vh;
+  height: 50vh;
   padding-bottom: -100vh;
+  position: inherit;
 
 }
 }
@@ -138,10 +145,41 @@ nav a:focus {
 }
 @media (min-width: 25rem){
   h1{
-    font-size: 2 rem;
+    font-size: 2rem;
   }
 
   .about-sewcool-video h1{
     top: .6em;
+    padding: 0 .325em;
+  }
+}
+
+@media(min-width: 60rem){
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  .about-sewcool{
+    background-image: url(images/gailblacknwhite.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: : 10em;
+    height: 75vh;
+  }
+
+  .about-sewcool-video{
+    width: 35%;
+    margin-left: -2.5%;
+    top: -15em;
+    box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+
+
+  }
+
+  .about-sewcool-video h1{
+    top: .3em;
+    left: 4rem;
+    transform: translateX(0);
+
   }
 }
