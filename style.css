@@ -1,0 +1,147 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size: Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+img{
+  max-width: 100%
+  height: auto;
+}
+
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*typography*/
+h1{
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-top: 0;
+}
+
+@media (min-width:60rem){
+  h1{
+    font-size: 3.7rem;
+  }
+}
+
+/*header*/
+
+logo{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+socinav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+socialnav li{
+  display: inline-block;
+  margin: 1em;
+  float: right;
+}
+
+
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin: 1em;
+}
+nav a{
+  font-weight: 850;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5rem;
+  color: black;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #DDD;
+}
+
+.about-sewitwas container float-img{
+  float: right;
+  border-radius: 50%;
+  width: 225px;
+  height: 350px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+.about-sewitwas{
+  background-color: black;
+}
+.about-sewitwas h1{
+  color: white;
+}
+
+.about-sewitwas p{
+  color: white;
+}
+
+@media(min-width: 60rem) {
+.about-sewitwas {
+  height: 100vh;
+
+}
+.logo{
+  height: 100vh;
+  padding-bottom: -100vh;
+
+}
+}
+
+/*about-sewcool*/
+.about-sewcool-video{
+  background-color: #232323;
+  padding: 3em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 4px solid white;
+  outline-offset: -2em;
+  color: white;
+  position: relative;
+
+}
+
+.about-sewcool-video h1{
+  color: white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: .75em;
+  background: #232323;
+  padding: 0 .145em;
+
+}
+@media (min-width: 25rem){
+  h1{
+    font-size: 2 rem;
+  }
+
+  .about-sewcool-video h1{
+    top: .6em;
+  }
+}
